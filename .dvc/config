@@ -1,0 +1,4 @@
+[core]
+    remote = hyperopt
+['remote "hyperopt"']
+    url = gdrive://1SE_tptr_-gf_WEy7WKXefD1P8A97lqQF

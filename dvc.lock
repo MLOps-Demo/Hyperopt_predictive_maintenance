@@ -1,0 +1,27 @@
+schema: '2.0'
+stages:
+  Training:
+    cmd: python predictive_maintenance_hyperopt.py
+    deps:
+    - path: Data/predictive_maintenance.csv
+      md5: 3e6cab8ef847cc7617c7e0aa14059757
+      size: 531014
+    - path: predictive_maintenance_hyperopt.py
+      md5: 11f24c35587edb4627f21bde705dc46b
+      size: 6000
+    outs:
+    - path: Confusion_matrix.png
+      md5: 664a34cb875cbfe9b46cc5752e75c887
+      size: 17080
+    - path: Machine_type.png
+      md5: 4f5954680b8c896f322937b183aa97ec
+      size: 15784
+    - path: Output/accuracy.json
+      md5: e8cbe73805f0ed9345f6bea225b9f83e
+      size: 110
+    - path: auc.png
+      md5: fd61b99a64db9013b9b6ed6ea650f25c
+      size: 38184
+    - path: machine_histogram.png
+      md5: 71c103e2dc39ba495c6d3884c41f3e83
+      size: 71929
